@@ -1,0 +1,9 @@
+@startuml Tracing of Simple Recursive Countdown Function
+"countdown(3)" --> output 3
+"countdown(3)"--> countdown(2)
+"countdown(2)" --> output 2
+"countdown(2)" --> countdown(1)
+"countdown(1)" --> output 1
+"countdown(1)" --> countdown(0)
+"countdown(0)" --> STOP! terminate execution
+@enduml
